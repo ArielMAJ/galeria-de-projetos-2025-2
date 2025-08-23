@@ -3,12 +3,12 @@ import { generateCardsIntoSection } from "/utils.js";
 /* Lista de portfólios: adicionem novos itens aqui via PR */
 const portfolios = [
   {
-    title: "Portfólio Pessoal Completo",
+    title: "Portfólio em React (TS)",
     description: "",
     github: "https://github.com/ArielMAJ/arielmaj.github.io",
     live: "https://ariel.artadevs.tech/", // URL do site em produção. Se não funcionar, deixe vazio e adicione uma screenshot
     screenshot: "", // URL de imagem opcional; se vazio, será mostrado o iframe do site
-    authorName: "Ariel Menezes",
+    authorName: "Prof. Ariel Menezes",
     authorPhoto: "https://avatars.githubusercontent.com/u/69123486?s=96&v=4", // URL de foto opcional. Utilize o do seu perfil do GitHub.
   },
 ];
