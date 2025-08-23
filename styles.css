@@ -37,6 +37,9 @@ h2 {
   position: relative;
   z-index: 1;
   transition: transform 0.3s ease;
+  max-width: 350px;
+  min-width: 200px;
+  margin: 0 auto;
 }
 
 .card h3 {

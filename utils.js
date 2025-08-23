@@ -122,10 +122,6 @@ function createCard(cardData, customInnerHTML) {
     ? customInnerHTML(cardData)
     : defaultCardInnerHTML(cardData);
 
-  card.style.maxWidth = "480px";
-  card.style.minWidth = "200px";
-  card.style.margin = "0 auto";
-
   card.addEventListener("click", () => cardOnClickEventListener(card));
   return card;
 }
