@@ -1,1 +1,1 @@
-# mostruario-de-projetos
+# galeria-de-projetos
