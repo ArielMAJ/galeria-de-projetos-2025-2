@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 1rem 2rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 0.75rem;
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.card iframe {
+  width: 100%;
+  height: calc(100% - 3rem);
+  border: none;
+  border-radius: 8px;
+  display: none;
+}
+
+.preview-wrapper {
+  width: 100%;
+  height: calc(100% - 3rem);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.preview-img,
+.preview-iframe {
+  width: 100%;
+  border: none;
+  display: none;
+}
+
+.github-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #24292e;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  z-index: 1001;
+  display: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
