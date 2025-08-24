@@ -1,7 +1,7 @@
 function defaultCardInnerHTML(cardData) {
   return `
     <h3>${cardData.title}</h3>
-    <p>${cardData.description || ""}</p>
+    <p class="mx-2">${cardData.description || ""}</p>
     <div class="preview-wrapper">
       <img src="${
         cardData.screenshot || ""
@@ -96,12 +96,12 @@ function cardOnClickEventListener(card) {
 
   void clone.offsetWidth;
 
-  clone.style.top = "3dvh";
-  clone.style.left = "3dvw";
+  clone.style.top = "1dvh";
+  clone.style.left = "1dvw";
   clone.style.margin = 0;
-  clone.style.width = "94dvw";
-  clone.style.maxWidth = "94dvw";
-  clone.style.height = "94dvh";
+  clone.style.width = "98dvw";
+  clone.style.maxWidth = "98dvw";
+  clone.style.height = "98dvh";
 
   const closeCardEvent = () =>
     overlayOnClickEventListener(
