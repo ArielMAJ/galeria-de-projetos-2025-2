@@ -23,8 +23,8 @@ function overlayOnClickEventListener(
   overlay
 ) {
   const originalRect = card.getBoundingClientRect();
-  clone.style.top = originalRect.top + "px";
-  clone.style.left = originalRect.left + "px";
+  clone.style.top = originalRect.top + window.scrollY + "px";
+  clone.style.left = originalRect.left + window.scrollX + "px";
   clone.style.width = originalRect.width + "px";
   clone.style.height = originalRect.height + "px";
 
@@ -55,8 +55,8 @@ function cardOnClickEventListener(card) {
   iframe.style.display = "block";
 
   clone.style.position = "absolute";
-  clone.style.top = rect.top + "px";
-  clone.style.left = rect.left + "px";
+  clone.style.top = rect.top + window.scrollY + "px";
+  clone.style.left = rect.left + window.scrollX + "px";
   clone.style.width = rect.width + "px";
   clone.style.height = rect.height + "px";
   clone.style.margin = 0;
@@ -87,11 +87,11 @@ function cardOnClickEventListener(card) {
 
   void clone.offsetWidth;
 
-  clone.style.top = "5%";
-  clone.style.left = "5%";
-  clone.style.width = "90vw";
-  clone.style.maxWidth = "90vw";
-  clone.style.height = "90vh";
+  clone.style.top = (window.scrollY + window.innerHeight * 0.03) + "px";
+  clone.style.left = (window.scrollX + window.innerWidth * 0.03) + "px";
+  clone.style.width = "94vw";
+  clone.style.maxWidth = "94vw";
+  clone.style.height = "94vh";
 
   overlay.addEventListener(
     "click",
