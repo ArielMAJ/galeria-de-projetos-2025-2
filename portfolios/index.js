@@ -29,6 +29,15 @@ const portfolios = [
     authorName: "Artur Janahú",
     authorPhoto: "https://avatars.githubusercontent.com/u/143747367?v=4", // URL de foto opcional. Utilize o do seu perfil do GitHub.
 },
+{
+    title: "Portfólio em React (TS)",
+    description: "",
+    github: "https://github.com/beatrizrosaa/profile",
+    live: "https://www.beatrizrosa.me/", // URL do site em produção. Se não funcionar, deixe vazio e adicione uma screenshot
+    screenshot: "", // URL de imagem opcional; se vazio, será mostrado o iframe do site
+    authorName: "Beatriz Rosa",
+    authorPhoto: "", // URL de foto opcional. Utilize o do seu perfil do GitHub.
+},
 ];
 
 function customInnerHTML(cardData) {
